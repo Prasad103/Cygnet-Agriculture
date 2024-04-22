@@ -382,3 +382,37 @@
 .footer .copyright a:hover {
     color: var(--primary);
 }
+
+#pesticidesMenu {
+    display: none;
+    /* position: absolute;
+    top: 0;
+    left: 100%; */
+  }
+  
+  #pesticidesDropdown:hover + #pesticidesMenu {
+    display: block;
+  }
+ 
+  
+ @media (min-width: 992px)
+ {
+    #pesticidesMenu {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+      }
+       /* #pesticidesDropdown::after {
+    content: "";
+    display: inline-block;
+    margin-left: 6em;
+    vertical-align: 0.05em; 
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0.3em solid transparent;
+    border-left: 0.3em solid transparent;
+    transform: rotate(-90deg);
+  } */
+ }
+  
