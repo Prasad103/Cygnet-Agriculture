@@ -14,7 +14,8 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Lora:wght@600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Lora:wght@600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -33,7 +34,8 @@
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status"></div>
     </div>
     <!-- Spinner End -->
@@ -59,7 +61,8 @@
             <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
                 <h1 class="fw-bold text-primary m-0">F<span class="text-secondary">oo</span>dy</h1>
             </a>
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -117,24 +120,73 @@
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="about-img position-relative overflow-hidden p-5 pe-0">
-                        <img class="img-fluid w-100" src="img/about.jpg">
+                        <img class="img-fluid w-100" src="img/about.jpg" alt="About Us Image">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <h1 class="display-5 mb-4">About us</h1>
-                    <p class="mb-4">We are a leading manufacturer, supplier, and exporter of organic certified herbal and biological products. Our range of high-quality organic certified products (inputs) includes:</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>Organic fungicides, insecticides.</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>Herbal plant growth enhancers/promoters.<p>
-                    <p><i class="fa fa-check text-primary me-3"></i>Bio fertilizers and bio insecticides.</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>Micro-nutrient fertilizers and soil conditioners.</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>Provide services for soil, water, plant tissue, and fertilizer analysis.<p>
-                    <p><i class="fa fa-check text-primary me-3"></i>Consultation for horticultural crop management practices.</p>
-                    <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="">Read More</a>
+                    <p class="translate-hover" data-en="We are a leading manufacturer, supplier, and exporter of organic certified herbal and biological products. Our range of high-quality organic certified products (inputs) includes:"
+                        data-hi="कार्बनिक प्रमाणित हर्बल और जैविक उत्पादों का अग्रणी निर्माता, आपूर्तिकर्ता और निर्यातक है। हमारे उच्च गुणवत्ता वाले जैविक प्रमाणित उत्पादों (इनपुट्स) में शामिल हैं:">We are a leading manufacturer, supplier, and exporter of organic certified herbal and biological products. Our range of high-quality organic certified products (inputs) includes: </p>
+                    <p class="translate-hover" data-en="Organic fungicides, insecticides."
+                        data-hi="कार्बनिक फंगिसाइड, कीटनाशक।">Organic fungicides, insecticides.</p>
+                    <p class="translate-hover" data-en="Herbal plant growth enhancers/promoters."
+                        data-hi="हर्बल पौध वृद्धि उत्तेजक/प्रोत्साहक।">Herbal plant growth enhancers/promoters.</p>
+                    <p class="translate-hover " data-en="Bio fertilizers and bio insecticides."
+                        data-hi="जैव उर्वरक और जैव कीटनाशक।">Bio fertilizers and bio insecticides.</p>
+                    <p class="translate-hover" data-en="Micro-nutrient fertilizers and soil conditioners."
+                        data-hi="सूक्ष्म पोषक तत्व उर्वरक और मृदा कंडीशनर।">Micro-nutrient fertilizers and soil
+                        conditioners.</p>
+                    <p class="translate-hover"
+                        data-en="Provide services for soil, water, plant tissue, and fertilizer analysis."
+                        data-hi="मिट्टी, पानी, पौधे के ऊतक, और उर्वरक विश्लेषण की सेवाएं प्रदान करें।">Provide services
+                        for soil, water, plant tissue, and fertilizer analysis.</p>
+                    <p class="translate-hover" data-en="Consultation for horticultural crop management practices."
+                        data-hi="बागवानी फसल प्रबंधन प्रथाओं के लिए परामर्श।">Consultation for horticultural crop
+                        management practices.</p>
+                    <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="#">Read More</a>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        document.querySelectorAll('.translate-hover').forEach(item => {
+            item.addEventListener('mouseenter', event => {
+                const hindiText = event.target.getAttribute('data-hi');
+                event.target.textContent = hindiText;
+                event.target.setAttribute('data-hi', event.target.textContent);
+            });
+            item.addEventListener('mouseleave', event => {
+                const englishText = event.target.getAttribute('data-en');
+                event.target.textContent = englishText;
+                event.target.setAttribute('data-en', event.target.textContent);
+            });
+        });
+    </script>
+
     <!-- About End -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="about-img position-relative overflow-hidden p-5 pe-0">
+                    <img class="img-fluid w-100" src="img/about.jpg">
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn h-100" data-wow-delay="0.5s">
+                <h1 class="display-5 mb-4">Our Mission</h1>
+                <p class="mb-1">
+                    <ul>
+                        <li >To expand our presence worldwide as a leading manufacturer, supplier, and exporter of authentic and certified organic and herbal products with superior quality.</li>
+                        <li class="mb-1">To strengthen the organic farming movement by providing robust organic inputs, making farming sustainable, profitable, and competitive, ensuring "organic food, healthy soil, and clean water" for every individual.</li>
+                        <li class="mb-1">To promote organic farming practices sustainably and identify domestic and global markets for our organic products.</li>
+                        <li class="mb-1">To improve the standard of living of small and marginal farmers through fair trade practices.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
     <!-- Firm Visit Start -->
@@ -143,7 +195,9 @@
             <div class="row g-5 align-items-center">
                 <div class="col-md-7 wow fadeIn" data-wow-delay="0.1s">
                     <h1 class="display-5 text-white mb-3">Visit Our Firm</h1>
-                    <p class="text-white mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.</p>
+                    <p class="text-white mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam
+                        amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna
+                        dolore erat amet. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.</p>
                 </div>
                 <div class="col-md-5 text-md-end wow fadeIn" data-wow-delay="0.5s">
                     <a class="btn btn-lg btn-secondary rounded-pill py-3 px-5" href="">Visit Now</a>
@@ -157,7 +211,8 @@
     <!-- Feature Start -->
     <div class="container-fluid bg-light bg-icon py-6">
         <div class="container">
-            <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s"
+                style="max-width: 500px;">
                 <h1 class="display-5 mb-3">Our Features</h1>
                 <p>Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
             </div>
@@ -166,7 +221,8 @@
                     <div class="bg-white text-center h-100 p-4 p-xl-5">
                         <img class="img-fluid mb-4" src="img/icon-1.png" alt="">
                         <h4 class="mb-3">Natural Process</h4>
-                        <p class="mb-4">Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero dolor duo.</p>
+                        <p class="mb-4">Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero
+                            dolor duo.</p>
                         <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Read More</a>
                     </div>
                 </div>
@@ -174,7 +230,8 @@
                     <div class="bg-white text-center h-100 p-4 p-xl-5">
                         <img class="img-fluid mb-4" src="img/icon-2.png" alt="">
                         <h4 class="mb-3">Organic Products</h4>
-                        <p class="mb-4">Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero dolor duo.</p>
+                        <p class="mb-4">Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero
+                            dolor duo.</p>
                         <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Read More</a>
                     </div>
                 </div>
@@ -182,7 +239,8 @@
                     <div class="bg-white text-center h-100 p-4 p-xl-5">
                         <img class="img-fluid mb-4" src="img/icon-3.png" alt="">
                         <h4 class="mb-3">Biologically Safe</h4>
-                        <p class="mb-4">Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero dolor duo.</p>
+                        <p class="mb-4">Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero
+                            dolor duo.</p>
                         <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Read More</a>
                     </div>
                 </div>
@@ -198,12 +256,17 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h1 class="fw-bold text-primary mb-4">F<span class="text-secondary">oo</span>dy</h1>
-                    <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita</p>
+                    <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
+                        stet lorem sit clita</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-0" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -224,8 +287,10 @@
                     <h4 class="text-light mb-4">Newsletter</h4>
                     <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Your email">
+                        <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
                     </div>
                 </div>
             </div>
@@ -249,7 +314,8 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
