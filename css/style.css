@@ -90,7 +90,7 @@
 }
 
 .top-bar {
-    height: 45px;
+    height: 60px;
     border-bottom: 1px solid rgba(0, 0, 0, .07);
 }
 
@@ -415,4 +415,10 @@
     transform: rotate(-90deg);
   } */
  }
-  
+ @media (max-width: 991px) {
+    .show-on-small {
+        display: block !important;
+    }
+}
+
+

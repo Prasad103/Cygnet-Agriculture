@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bootstrap Dropdown</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li><a class="dropdown-item" href="#">Item 1</a></li>
+    <li class="dropdown-divider"></li>
+    <li class="dropdown-item dropdown">
+      <a class="dropdown-toggle" href="#" role="button" id="nestedDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+        Item 2
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="nestedDropdown">
+        <li><a class="dropdown-item" href="#">Sub-item 1</a></li>
+        <li><a class="dropdown-item" href="#">Sub-item 2</a></li>
+      </ul>
+    </li>
+    <li><a class="dropdown-item" href="#">Item 3</a></li>
+  </ul>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
