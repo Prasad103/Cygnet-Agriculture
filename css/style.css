@@ -421,4 +421,15 @@
     }
 }
 
+.hindi-text {
+    display: none;
+}
+
+.col-lg-6:hover .english-text {
+    display: none;
+}
+
+.col-lg-6:hover .hindi-text {
+    display: block;
+}
 
