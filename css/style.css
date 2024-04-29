@@ -383,37 +383,31 @@
     color: var(--primary);
 }
 
-#pesticidesMenu {
-    display: none;
-    /* position: absolute;
-    top: 0;
-    left: 100%; */
-  }
-  
-  #pesticidesDropdown:hover + #pesticidesMenu {
+#pesticidesDropdown:hover + #pesticidesMenu {
     display: block;
-  }
- 
+}
+
+#pesticidesMenu:hover {
+    display: block;
+}
+/* CSS for click/tap effect on smaller screens */
+@media (max-width: 991px) {
+    #pesticidesMenu.show {
+        display: block !important;
+    }
+}
+
+
   
  @media (min-width: 992px)
  {
     #pesticidesMenu {
         display: none;
         position: absolute;
-        top: 0;
-        left: 100%;
+        top: -9px;
+        left: 80%;
       }
-       /* #pesticidesDropdown::after {
-    content: "";
-    display: inline-block;
-    margin-left: 6em;
-    vertical-align: 0.05em; 
-    border-top: 0.3em solid;
-    border-right: 0.3em solid transparent;
-    border-bottom: 0.3em solid transparent;
-    border-left: 0.3em solid transparent;
-    transform: rotate(-90deg);
-  } */
+
  }
  @media (max-width: 991px) {
     .show-on-small {
