@@ -427,3 +427,54 @@
     display: block;
 }
 
+/* css for contact card */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.card {
+    width: 400px;
+    height: 350px;
+    background-color: #f0f0f0;
+    margin: 10px;
+    transition: box-shadow 0.3s ease;
+    /* Add box shadow for the slight black shadow effect */
+    box-shadow: 0 8px 16px rgba(111, 109, 109, 0.9);
+    display: flex;
+    align-items: center;
+    /* Vertically center align the content */
+    justify-content: center;
+    /* Horizontally center align the content */
+}
+
+.card:hover {
+    background-color: #7fff7f;
+    /* Green color on hover */
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+    /* Center align the text */
+}
+
+.card-content h2 {
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    margin: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+@media (max-width: 992px) {
+    .card {
+        width: 100%;
+        height: auto;
+    }
+}
+
