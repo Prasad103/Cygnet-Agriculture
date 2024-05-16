@@ -298,9 +298,9 @@
     transition: .5s;
 }
 
-.testimonial-carousel .owl-item.center .testimonial-item {
+/* .testimonial-carousel .owl-item.center .testimonial-item {
     background: var(--primary) !important;
-}
+} */
 
 .testimonial-carousel .owl-item.center .testimonial-item * {
     color: #FFFFFF !important;
@@ -485,3 +485,25 @@
     background: url(../img/bulding.jpg) top right no-repeat;
     background-size: cover;
 }
+/* counter css */
+.counter-container {
+    display: flex;
+    justify-content: center; /* Distribute items evenly along the main axis */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.counter-item {
+    text-align: center;
+   }
+
+.counter {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.counter-title {
+    font-size: 38px;
+    font-weight: 100;
+}
+
