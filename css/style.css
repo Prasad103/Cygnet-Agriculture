@@ -478,3 +478,10 @@
     }
 }
 
+/* about us page header img */
+.about-header {
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+    background: url(../img/bulding.jpg) top right no-repeat;
+    background-size: cover;
+}
