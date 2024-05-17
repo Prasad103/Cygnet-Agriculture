@@ -292,24 +292,28 @@
                 <div class="col-lg-12 text-center wow slideInRight" data-wow-delay="0.1s">
                     <ul class="nav nav-pills d-inline-flex justify-content-end mb-5">
                         <li class="nav-item me-2">
-                            <a class="btn btn-outline-primary border-2 active" data-bs-toggle="pill" href="#tab-1"
+                            <a class="btn btn-outline-primary border-2 active " style="border-radius: 20px;" data-bs-toggle="pill" href="#tab-1"
                                 onclick="hidePesticideButtons()">Biofertilizers</a>
                         </li>
                         <li class="nav-item me-2">
                             <a class="btn btn-outline-primary border-2" data-bs-toggle="pill" href="#tab-2"
-                                onclick="hidePesticideButtons()">Micronutrient</a>
+                                onclick="hidePesticideButtons()" style="border-radius: 20px;">Micronutrient</a>
                         </li>
                         <li class="nav-item me-2">
                             <a class="btn btn-outline-primary border-2" data-bs-toggle="pill" href="#tab-3"
-                                onclick="hidePesticideButtons()">Organic fert</a>
+                                onclick="hidePesticideButtons()" style="border-radius: 20px;">Organic fert</a>
                         </li>
                         <li class="nav-item me-2">
                             <a class="btn btn-outline-primary border-2" data-bs-toggle="pill" href="#tab-4"
-                                onclick="togglePesticideButtons()">Pesticides</a>
+                                onclick="togglePesticideButtons()" style="border-radius: 20px;">Pesticides</a>
                         </li>
                         <li class="nav-item me-2">
                             <a class="btn btn-outline-primary border-2" data-bs-toggle="pill" href="#tab-5"
-                                onclick="hidePesticideButtons()">PGR Product</a>
+                                onclick="hidePesticideButtons()" style="border-radius: 20px;">PGR Product</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="btn btn-outline-primary border-2" data-bs-toggle="pill" href="#tab-9"
+                                onclick="hidePesticideButtons()" style="border-radius: 20px;">Water-Soluble</a>
                         </li>
                     </ul>
                     <!-- New buttons for Pesticides -->
@@ -317,15 +321,15 @@
                         <ul class="nav nav-pills d-inline-flex justify-content-end mb-5">
                             <li class="nav-item me-2">
                                 <a class="btn btn-outline-primary border-2" data-bs-toggle="pill"
-                                    href="#tab-6">Insecticide</a>
+                                    href="#tab-6" style="border-radius: 20px;">Insecticide</a>
                             </li>
                             <li class="nav-item me-2">
                                 <a class="btn btn-outline-primary border-2" data-bs-toggle="pill"
-                                    href="#tab-7">Herbicides</a>
+                                    href="#tab-7" style="border-radius: 20px;">Herbicides</a>
                             </li>
                             <li class="nav-item me-2">
                                 <a class="btn btn-outline-primary border-2" data-bs-toggle="pill"
-                                    href="#tab-8">Fungicides</a>
+                                    href="#tab-8" style="border-radius: 20px;">Fungicides</a>
                             </li>
                         </ul>
                     </div>
@@ -632,7 +636,7 @@
 
 
                         <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
-                            <a class="btn btn-primary rounded-pill py-3 px-5" href="">Browse More Products</a>
+                            <a class="btn btn-primary rounded-pill py-3 px-5" href="./bio_fertilizer.html">Browse More Products</a>
                         </div>
                     </div>
                 </div>
@@ -1125,7 +1129,7 @@
 
 
                         <div class="col-12 text-center">
-                            <a class="btn btn-primary rounded-pill py-3 px-5" href="">Browse More Products</a>
+                            <a class="btn btn-primary rounded-pill py-3 px-5" href="micronutrient.html">Browse More Products</a>
                         </div>
                     </div>
                 </div>
@@ -1250,7 +1254,7 @@
                         </div>
 
                         <div class="col-12 text-center">
-                            <a class="btn btn-primary rounded-pill py-3 px-5" href="">Browse More Products</a>
+                            <a class="btn btn-primary rounded-pill py-3 px-5" href="organic_fert.html">Browse More Products</a>
                         </div>
                     </div>
                 </div>
@@ -1457,7 +1461,7 @@
 
 
                         <div class="col-12 text-center">
-                            <a class="btn btn-primary rounded-pill py-3 px-5" href="">Browse More Products</a>
+                            <a class="btn btn-primary rounded-pill py-3 px-5" href="insecticide.html">Browse More Products</a>
                         </div>
                     </div>
                 </div>
@@ -1719,7 +1723,7 @@
 
 
                         <div class="col-12 text-center">
-                            <a class="btn btn-primary rounded-pill py-3 px-5" href="">Browse More Products</a>
+                            <a class="btn btn-primary rounded-pill py-3 px-5" href="hibicidie.html">Browse More Products</a>
                         </div>
                     </div>
                 </div>
@@ -2018,7 +2022,7 @@
 
 
                         <div class="col-12 text-center">
-                            <a class="btn btn-primary rounded-pill py-3 px-5" href="">Browse More Products</a>
+                            <a class="btn btn-primary rounded-pill py-3 px-5" href="fungsicide.html">Browse More Products</a>
                         </div>
                     </div>
                 </div>
@@ -2682,11 +2686,342 @@
 
 
                         <div class="col-12 text-center">
-                            <a class="btn btn-primary rounded-pill py-3 px-5" href="">Browse More Products</a>
+                            <a class="btn btn-primary rounded-pill py-3 px-5" href="pgr.html">Browse More Products</a>
                         </div>
                     </div>
                 </div>
 
+                <!--Water Soluble Fertilizers-->
+                <div id="tab-9" class="tab-pane fade show p-0 mt-3" >
+                    <div class="row g-4">
+    
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden d-flex justify-content-center align-items-center image-container">
+                                    <img class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;" src="watEr soubal/Omega 10_10_10.png" alt="">
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Omega 10:10:10</a>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-100 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden d-flex justify-content-center align-items-center image-container">
+                                    <img class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;" src="watEr soubal/Omega 05_15_15.png" alt="">
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Omega 05:15:15</a>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-100 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden d-flex justify-content-center align-items-center image-container">
+                                    <img class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;" src="watEr soubal/Omega 12_30_15.png" alt="">
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Omega 12:30:15</a>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-100 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden d-flex justify-content-center align-items-center image-container">
+                                    <img class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;" src="watEr soubal/Omega 06_12_36.png" alt="">
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Omega 06:12:36</a>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-100 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden d-flex justify-content-center align-items-center image-container">
+                                    <img class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;" src="watEr soubal/Omega 1.png" alt="">
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Omega 1</a>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-100 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden d-flex justify-content-center align-items-center image-container">
+                                    <img class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;" src="watEr soubal/Omega 13_05_26.png" alt="">
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Omega 13:05:26</a>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-100 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden d-flex justify-content-center align-items-center image-container">
+                                    <img class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;" src="watEr soubal/Omega 12_32_14.png" alt="">
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Omega 12:32:14</a>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-100 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden d-flex justify-content-center align-items-center image-container">
+                                    <img class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;" src="watEr soubal/Omega Potassium Schoenite.png" alt="">
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Omega Potassium Schoenite</a>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-100 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden d-flex justify-content-center align-items-center image-container">
+                                    <img class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;" src="watEr soubal/Volt Plus 00_00_50.png" alt="">
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Volt Plus 00:00:50</a>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-100 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden d-flex justify-content-center align-items-center image-container">
+                                    <img class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;" src="watEr soubal/Volt Plus 0_52_34.png" alt="">
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Volt Plus 0:52:34</a>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-100 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden d-flex justify-content-center align-items-center image-container">
+                                    <img class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;" src="watEr soubal/Volt Plus 18_18_18 SOP.png" alt="">
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Volt Plus 18:18:18 SOP</a>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-100 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden d-flex justify-content-center align-items-center image-container">
+                                    <img class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;" src="watEr soubal/Volt Plus 18_18_18.png" alt="">
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Volt Plus 18:18:18</a>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-100 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden d-flex justify-content-center align-items-center image-container">
+                                    <img class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;" src="watEr soubal/Volt Plus_17_44_00.png" alt="">
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Volt Plus 17:44:00</a>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-100 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden d-flex justify-content-center align-items-center image-container">
+                                    <img class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;" src="watEr soubal/Volt Plus 20_20_20.png" alt="">
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Volt Plus 20:20:20</a>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-100 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden d-flex justify-content-center align-items-center image-container">
+                                    <img class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;" src="watEr soubal/Volt Plus 19_19_19.png" alt="">
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Volt Plus 19:19:19</a>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-100 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden d-flex justify-content-center align-items-center image-container">
+                                    <img class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;" src="watEr soubal/Volt Plus 13_00_45.png" alt="">
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Volt Plus 13:00:45</a>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-100 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden d-flex justify-content-center align-items-center image-container">
+                                    <img class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;" src="watEr soubal/Volt Plus 13_40_13.png" alt="">
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Volt Plus 13:40:13</a>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-100 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden d-flex justify-content-center align-items-center image-container">
+                                    <img class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;" src="watEr soubal/Volt Plus 15_15_15 (1).png" alt="">
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Volt Plus 15:15:15</a>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-100 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden d-flex justify-content-center align-items-center image-container">
+                                    <img class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;" src="watEr soubal/Volt Plus 17_17_17.png" alt="">
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Volt Plus 17:17:17</a>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-100 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden d-flex justify-content-center align-items-center image-container">
+                                    <img class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;" src="watEr soubal/Volt Plus_Calcium Nitrate.png" alt="">
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Volt Plus Calcium Nitrate</a>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-100 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <a class="btn btn-primary rounded-pill py-3 px-5" href="soluble_fertilizer.html">Browse More Products</a>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
