@@ -2693,41 +2693,59 @@
     </div>
     <!-- Product End -->
     <!-- counter starts -->
-    <div class="counter-container container-fluid bg-light bg-icon py-6 mb-2 mt-5">
+    <div class="counter-container container-fluid bg-light bg-icon py-5 mb-0 mt-4" id="counter-section">
         <div class="counter-item mx-auto">
-            <div class="counter" id="counter1">100</div>
+            <div class="counter" id="counter1">0</div>
             <h2 class="counter-title">All Products</h2>
         </div>
         <div class="counter-item mx-auto">
-            <div class="counter" id="counter2">4000</div>
+            <div class="counter" id="counter2">0</div>
             <h2 class="counter-title">Views</h2>
         </div>
         <div class="counter-item mx-auto">
-            <div class="counter" id="counter3">10</div>
+            <div class="counter" id="counter3">0</div>
             <h2 class="counter-title">Our Firms</h2>
         </div>
     </div>
     
+    <script>
+        function startCounting(id, endValue, duration) {
+            let current = 0;
+            const counterElement = document.getElementById(id);
+            const intervalTime = duration / endValue;
+            const interval = setInterval(() => {
+                counterElement.textContent = current;
+                current++;
+                if (current > endValue) {
+                    clearInterval(interval);
+                }
+            }, intervalTime);
+        }
     
-
-<script>
-    function startCounting(id, endValue) {
-        let current = 0;
-        const counterElement = document.getElementById(id);
-        const interval = setInterval(() => {
-            counterElement.textContent = current;
-            current++;
-            if (current > endValue) {
-                clearInterval(interval);
-            }
-        }, 5); // Adjust the interval for smoother/faster counting
-    }
-
-    startCounting('counter1', 100);
-    startCounting('counter2', 1000);
-    startCounting('counter3', 10);
-</script>
-
+        const duration = 9000; // Total duration in milliseconds (e.g., 5000ms or 5 seconds)
+    
+        function startCounters() {
+            startCounting('counter1', 100, duration);
+            startCounting('counter2', 1500, duration);
+            startCounting('counter3', 10, duration);
+        }
+    
+        document.addEventListener('DOMContentLoaded', () => {
+            const counterSection = document.getElementById('counter-section');
+    
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        startCounters();
+                        observer.disconnect(); // Stop observing after counters start
+                    }
+                });
+            });
+    
+            observer.observe(counterSection);
+        });
+    </script>
+    
 
 
     <!-- counter ends -->
@@ -2763,11 +2781,11 @@
                 </div>
                 
                 <div class="testimonial-item position-relative  p-0 mt-4">
-                    <img class="w-100 h-100 rounded" src="./IMG/myfirm.png" alt="">
+                    <img class="w-100 h-100 rounded" src="./IMG/firm22.png" alt="">
                 </div>
                 
                 <div class="testimonial-item position-relative p-0 mt-4">
-                    <img class="w-100 h-100 rounded" src="./IMG/firm3-removebg-preview (1).png" alt="">
+                    <img class="w-100 h-100 rounded" src="./IMG/firm33.png" alt="">
                 </div>
                 
                 <!-- <div class="testimonial-item position-relative bg-white p-0 mt-4">

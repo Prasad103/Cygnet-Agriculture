@@ -56,7 +56,25 @@
     margin: 0 5px;
     padding: 5px 10px;
     cursor: pointer;
+
+    
 }
+@media (max-width: 600px) {
+    .gallery-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-item {
+        width: 100%;
+    }
+}
+.gallery img {
+    margin: 10px;
+    max-width: 100%; /* Adjust the maximum width of the images */
+    height: auto;
+}
+
     </style>
 
 </head>
@@ -169,64 +187,64 @@
 <script>
 // Sample array of image URLs with sizes
 const images = [
-    { src: "Img/man.jpg", width: 250, height: 300 },
-    { src: "Img/man.jpg", width: 500, height: 300 },
-    { src: "Img/man.jpg", width: 350, height: 300 },
-    { src: "Img/man.jpg", width: 400, height: 250 },
-    { src: "Img/man.jpg", width: 300, height: 300 },
-    { src: "Img/man.jpg", width: 300, height: 250 },
-    { src: "Img/man.jpg", width: 300, height: 250 },
-    { src: "Img/man.jpg", width: 280, height: 250 },
-    { src: "Img/man.jpg", width: 400, height: 250 },
-    { src: "Img/man.jpg", width: 250, height: 300 },
-    { src: "Img/man.jpg", width: 500, height: 300 },
-    { src: "Img/man.jpg", width: 350, height: 300 },
-    { src: "Img/man.jpg", width: 400, height: 250 },
-    { src: "Img/man.jpg", width: 300, height: 300 },
-    { src: "Img/man.jpg", width: 300, height: 250 },
-    { src: "Img/man.jpg", width: 300, height: 250 },
-    { src: "Img/man.jpg", width: 280, height: 250 },
-    { src: "Img/man.jpg", width: 400, height: 250 },
+    { src: "Img/gallery_img1.jpg", width: 290, height: 300},
+    { src: "Img/gallery_img2 (2).jpg", width: 400, height: 300 },
+    // { src: "Img/man.jpg", width: 350, height: 300 },
+    // { src: "Img/man.jpg", width: 400, height: 250 },
+    // { src: "Img/man.jpg", width: 300, height: 300 },
+    // { src: "Img/man.jpg", width: 300, height: 250 },
+    // { src: "Img/man.jpg", width: 300, height: 250 },
+    // { src: "Img/man.jpg", width: 280, height: 250 },
+    // { src: "Img/man.jpg", width: 400, height: 250 },
+    // { src: "Img/man.jpg", width: 250, height: 300 },
+    // { src: "Img/man.jpg", width: 500, height: 300 },
+    // { src: "Img/man.jpg", width: 350, height: 300 },
+    // { src: "Img/man.jpg", width: 400, height: 250 },
+    // { src: "Img/man.jpg", width: 300, height: 300 },
+    // { src: "Img/man.jpg", width: 300, height: 250 },
+    // { src: "Img/man.jpg", width: 300, height: 250 },
+    // { src: "Img/man.jpg", width: 280, height: 250 },
+    // { src: "Img/man.jpg", width: 400, height: 250 },
     
     // Add more image objects with different sizes here
-    { src: "Img/man2.jpg", width: 500, height: 300 },
-    { src: "Img/man2.jpg", width: 250, height: 300 },
-    { src: "Img/man2.jpg", width: 350, height: 300 },
-    { src: "Img/man2.jpg", width: 400, height: 250 },
-    { src: "Img/man2.jpg", width: 300, height: 300 },
-    { src: "Img/man2.jpg", width: 300, height: 250 },
-    { src: "Img/man2.jpg", width: 300, height: 250 },
-    { src: "Img/man2.jpg", width: 280, height: 250 },
-    { src: "Img/man2.jpg", width: 400, height: 250 },
-    { src: "Img/man2.jpg", width: 250, height: 300 },
-    { src: "Img/man2.jpg", width: 500, height: 300 },
-    { src: "Img/man2.jpg", width: 350, height: 300 },
-    { src: "Img/man2.jpg", width: 400, height: 250 },
-    { src: "Img/man2.jpg", width: 300, height: 300 },
-    { src: "Img/man2.jpg", width: 300, height: 250 },
-    { src: "Img/man2.jpg", width: 300, height: 250 },
-    { src: "Img/man2.jpg", width: 280, height: 250 },
-    { src: "Img/man2.jpg", width: 400, height: 250 },
+    // { src: "Img/man2.jpg", width: 500, height: 300 },
+    // { src: "Img/man2.jpg", width: 250, height: 300 },
+    // { src: "Img/man2.jpg", width: 350, height: 300 },
+    // { src: "Img/man2.jpg", width: 400, height: 250 },
+    // { src: "Img/man2.jpg", width: 300, height: 300 },
+    // { src: "Img/man2.jpg", width: 300, height: 250 },
+    // { src: "Img/man2.jpg", width: 300, height: 250 },
+    // { src: "Img/man2.jpg", width: 280, height: 250 },
+    // { src: "Img/man2.jpg", width: 400, height: 250 },
+    // { src: "Img/man2.jpg", width: 250, height: 300 },
+    // { src: "Img/man2.jpg", width: 500, height: 300 },
+    // { src: "Img/man2.jpg", width: 350, height: 300 },
+    // { src: "Img/man2.jpg", width: 400, height: 250 },
+    // { src: "Img/man2.jpg", width: 300, height: 300 },
+    // { src: "Img/man2.jpg", width: 300, height: 250 },
+    // { src: "Img/man2.jpg", width: 300, height: 250 },
+    // { src: "Img/man2.jpg", width: 280, height: 250 },
+    // { src: "Img/man2.jpg", width: 400, height: 250 },
 
         // Add more image objects with different sizes here
-        { src: "Img/man.jpg", width: 250, height: 300 },
-    { src: "Img/man.jpg", width: 500, height: 300 },
-    { src: "Img/man.jpg", width: 350, height: 300 },
-    { src: "Img/man.jpg", width: 400, height: 250 },
-    { src: "Img/man.jpg", width: 300, height: 300 },
-    { src: "Img/man.jpg", width: 300, height: 250 },
-    { src: "Img/man.jpg", width: 300, height: 250 },
-    { src: "Img/man.jpg", width: 280, height: 250 },
-    { src: "Img/man.jpg", width: 400, height: 250 },
-    { src: "Img/man.jpg", width: 250, height: 300 },
-    { src: "Img/man.jpg", width: 500, height: 300 },
-    { src: "Img/man.jpg", width: 350, height: 300 },
-    { src: "Img/man.jpg", width: 400, height: 250 },
-    { src: "Img/man.jpg", width: 300, height: 300 },
-    { src: "Img/man.jpg", width: 300, height: 250 },
-    { src: "Img/man.jpg", width: 300, height: 250 },
-    { src: "Img/man.jpg", width: 280, height: 250 },
-    { src: "Img/man.jpg", width: 400, height: 250 },
+    //     { src: "Img/man.jpg", width: 250, height: 300 },
+    // { src: "Img/man.jpg", width: 500, height: 300 },
+    // { src: "Img/man.jpg", width: 350, height: 300 },
+    // { src: "Img/man.jpg", width: 400, height: 250 },
+    // { src: "Img/man.jpg", width: 300, height: 300 },
+    // { src: "Img/man.jpg", width: 300, height: 250 },
+    // { src: "Img/man.jpg", width: 300, height: 250 },
+    // { src: "Img/man.jpg", width: 280, height: 250 },
+    // { src: "Img/man.jpg", width: 400, height: 250 },
+    // { src: "Img/man.jpg", width: 250, height: 300 },
+    // { src: "Img/man.jpg", width: 500, height: 300 },
+    // { src: "Img/man.jpg", width: 350, height: 300 },
+    // { src: "Img/man.jpg", width: 400, height: 250 },
+    // { src: "Img/man.jpg", width: 300, height: 300 },
+    // { src: "Img/man.jpg", width: 300, height: 250 },
+    // { src: "Img/man.jpg", width: 300, height: 250 },
+    // { src: "Img/man.jpg", width: 280, height: 250 },
+    // { src: "Img/man.jpg", width: 400, height: 250 },
 
 
 ];

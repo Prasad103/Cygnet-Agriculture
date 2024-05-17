@@ -490,7 +490,7 @@
     display: flex;
     justify-content: center; /* Distribute items evenly along the main axis */
     align-items: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 0px; */
 }
 
 .counter-item {
