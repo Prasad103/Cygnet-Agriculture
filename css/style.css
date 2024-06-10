@@ -92,6 +92,7 @@
 .top-bar {
     height: 60px;
     border-bottom: 1px solid rgba(0, 0, 0, .07);
+    background-color: white;
 }
 
 .navbar .dropdown-toggle::after {
@@ -102,10 +103,15 @@
     vertical-align: middle;
     margin-left: 8px;
 }
+.navbar
+{
+    background-color: #3CB815;
+}
 
 .navbar .navbar-nav .nav-link {
     padding: 25px 25px;
-    color: #555555;
+    /* color: #555555; */
+    color: #EEEEEE;
     font-weight: 500;
     outline: none;
 }
