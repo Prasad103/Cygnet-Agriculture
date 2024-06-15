@@ -574,3 +574,77 @@
     }
 }
 
+/* home carousel updated css */
+  .carousel-container {
+      margin-top: 70px; /* Adjust this value based on the height of your navbar */
+  }
+  
+  /* Optional: Ensure carousel images cover the entire carousel container */
+  .carousel-inner img {
+      height: 100vh;
+      object-fit: cover;
+  }
+
+.grey-box {
+   border: 1px solid #272727;
+    text-align: center;
+    max-width: 100%; /* Ensure it doesn't overflow the parent container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+.grey-box {
+    background-color: rgba(128, 128, 128, 0.5); /* Adjust the opacity (the last value) as needed */
+    padding: 20px;
+    
+}
+.grey-box img {
+    max-width: 100%; /* Ensure the image width fits within the container */
+    height: auto;
+    display: block;
+    border: none;
+    background: transparent;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.headline {
+    font-family: Poppins;
+    line-height: 99px; /* Adjusted line height */
+    letter-spacing: 0px;
+    font-weight: 500;
+    font-size: 84px; /* Set font size to 84px */
+    color: white;
+    margin: 20px 0; /* Added margin top and bottom */
+}
+.carousel-item.active .grey-box {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency as needed */
+  }
+  
+  .carousel-item.active .headline {
+    animation: zoomIn 5s forwards;
+  }
+  
+  .carousel-item.active .subheadline {
+    animation: moveDown 5s forwards;
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes moveDown {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
