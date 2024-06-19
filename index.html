@@ -37,9 +37,26 @@
 
     <style>
         .image-container {
-            height: 250px;
+            height: 200px;
             /* Adjust this height as needed */
             /* Add any other styles you want for the image container */
+        }
+
+        @media (min-width: 768px) {
+            .grey-box {
+                flex-wrap: nowrap;
+            }
+
+            .image-container,
+            .text-container {
+                flex: 1;
+                margin-bottom: 0;
+            }
+
+            .text-container {
+                text-align: left;
+                padding-left: 20px;
+            }
         }
     </style>
 
@@ -218,22 +235,25 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7">
-                                    <div class="grey-box">
-                                        <rs-layer id="slider-1-slide-1-layer-1" data-type="image" data-rsp_ch="on"
-                                            data-xy="x:c;y:m;yo:-113px;" data-text="l:22;a:inherit;"
-                                            data-dim="w:['372px','372px','372px','372px'];h:['147px','147px','147px','147px'];"
-                                            data-frame_0="sX:2;sY:2;tp:600;" data-frame_0_mask="u:t;"
-                                            data-frame_1="tp:600;e:Power2.easeOut;sp:2000;" data-frame_1_mask="u:t;"
-                                            data-frame_999="o:0;tp:600;st:w;sR:7000;"
-                                            style="z-index:9;font-family:Roboto;">
+                                    <div class="grey-box"
+                                        style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 20px; background-color:transparent;">
+                                        <div class="image-container"
+                                            style="flex: 1 1 100%; display: flex; justify-content: center; margin-bottom: 20px;">
                                             <img fetchpriority="high" decoding="async"
                                                 src="//wp1.themexlab.com/newwp/organicstore/wp-content/uploads/2017/03/1.png"
-                                                width="372" height="147" data-no-retina>
-                                        </rs-layer>
-                                        <h2 class="headline">Organic Store</h2>
-                                        <p class="subheadline">Fruits ~ Vegetables ~ Foods ~ Cosmetics</p>
-                                        <p class="additional-text">We are providing highest quality Organics Products
-                                            for USA almo</p>
+                                                alt="Organic Store Image" style="max-width: 100%; height: auto;">
+                                        </div>
+                                        <div class="text-container" style="flex: 1 1 100%; text-align: center;">
+                                            <h2 class="headline"
+                                                style="font-family: 'Roboto', sans-serif; font-size: 24px; margin-bottom: 10px; color: #0f0e0e;">
+                                                Organic Store</h2>
+                                            <p class="subheadline"
+                                                style="font-family: 'Roboto', sans-serif; font-size: 16px; margin-bottom: 10px; color: #0e0e0e;">
+                                                Fruits ~ Vegetables ~ Foods ~ Cosmetics</p>
+                                            <p class="additional-text"
+                                                style="font-family: 'Roboto', sans-serif; font-size: 16px; margin-bottom: 10px; color: #0e0b09;">
+                                                We are providing highest quality Organics Products for USA almo</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -265,75 +285,6 @@
                                             Shop Now
                                         </rs-layer>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="carousel-item">
-                    <img class="w-100" src="IMG/slide-3.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-7 col-md-4">
-                                    <rs-layer id="slider-1-slide-3-layer-4" data-type="image" data-rsp_ch="on"
-                                        data-xy="x:c;y:m;yo:-130px,-150px,-160px,-180px;" data-text="l:22;a:inherit;"
-                                        data-dim="w:['359px','359px','359px','359px'];h:['47px','47px','47px','47px'];"
-                                        data-frame_0="sX:2;sY:2;tp:600;" data-frame_0_mask="u:t;"
-                                        data-frame_1="tp:600;e:Power2.easeOut;sp:1000;" data-frame_1_mask="u:t;"
-                                        data-frame_999="o:0;tp:600;st:w;sR:8700;"
-                                        style="z-index:6;font-family:Roboto;"><img decoding="async"
-                                            src="//wp1.themexlab.com/newwp/organicstore/wp-content/uploads/2017/03/3.png"
-                                            width="359" height="47" data-no-retina>
-                                    </rs-layer>
-                                    <!---->
-                                    <rs-layer id="slider-1-slide-3-layer-5" data-type="text"
-                                        data-color="rgba(255,255,255,1)" data-rsp_ch="on"
-                                        data-xy="x:c;xo:2px;y:m;yo:-50px,-70px,-80px,-90px;"
-                                        data-text="w:normal;s:54,54,54,40;l:70,70,70,50;fw:700;a:center;"
-                                        data-frame_0="x:-175%;o:1;tp:600;" data-frame_0_mask="u:t;x:100%;"
-                                        data-frame_1="tp:600;e:Power3.easeOut;sp:1500;" data-frame_1_mask="u:t;"
-                                        data-frame_999="o:0;tp:600;st:w;sR:8700;"
-                                        style="z-index:7;font-family:Open Sans;text-transform:uppercase;">Natural
-                                        Healthy Foods
-                                    </rs-layer>
-                                    <!---->
-                                    <rs-layer id="slider-1-slide-3-layer-13" data-type="text" data-rsp_ch="on"
-                                        data-xy="x:c;yo:352px,370px,457px,341px;"
-                                        data-text="w:normal;s:18,15,14,16;l:32,27,30,30;a:center;"
-                                        data-frame_0="y:-100%;" data-frame_0_mask="u:t;" data-frame_1="sp:2000;"
-                                        data-frame_1_mask="u:t;" data-frame_999="o:0;st:w;"
-                                        style="z-index:8;font-family:Pacifico;">With Your Affortable <br>
-                                    </rs-layer>
-                                    <!---->  
-                                    <rs-layer id="slider-1-slide-3-layer-14" data-type="text" data-rsp_ch="on"
-                                    data-xy="x:c;yo:406px,416px,514px,397px;"
-                                    data-text="w:normal;s:14,14,14,16;l:24,20,24,32;a:center;"
-                                    data-dim="w:auto,auto,auto,460px;" data-frame_0="y:100%;"
-                                    data-frame_0_mask="u:t;" data-frame_1="sp:2500;"
-                                    data-frame_1_mask="u:t;" data-frame_999="o:0;st:w;"
-                                    style="z-index:9;font-family:Open Sans;">Great explorer of
-                                    the
-                                    truth, the master-builder of human happin
-                                </rs-layer>
-                                <!---->
-                                <rs-layer id="slider-1-slide-3-layer-15" class="rev-btn" data-type="button" data-rsp_ch="on"
-                                data-xy="x:c;yo:466px,467px,574px,494px;"
-                                data-text="w:normal;s:14;l:44;fw:700;a:center;"
-                                data-dim="w:160px,136px,150px,150px;minh:0px,none,none,none;"
-                                data-padding="r:25,21,16,10;l:25,21,16,10;"
-                                data-frame_0="sX:2;sY:2;" data-frame_0_mask="u:t;"
-                                data-frame_1="e:Power2.easeOut;sp:3000;"
-                                data-frame_1_mask="u:t;" data-frame_999="o:0;st:w;"
-                                data-frame_hover="c:#7fb401;bgc:#fff;bor:0px,0px,0px,0px;bri:120%;"
-                                style="z-index:10;background-color:#7fb401;font-family:Open Sans;text-transform:uppercase;">Shop
-                                now
-                            </rs-layer>
-                            <!----> 
-                        </rs-slide>
-                    </rs-slides>
                                 </div>
                             </div>
                         </div>
